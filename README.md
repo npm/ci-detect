@@ -2,6 +2,9 @@
 
 Detect what kind of CI environment the program is in
 
+[![Build Status](https://travis-ci.com/npm/ci-detect.svg?branch=master)](https://travis-ci.com/npm/ci-detect)
+[![Coverage Status](https://coveralls.io/repos/github/npm/ci-detect/badge.svg?branch=master)](https://coveralls.io/github/npm/ci-detect?branch=master)
+
 ## USAGE
 
 ```js
