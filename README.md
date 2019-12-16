@@ -27,6 +27,9 @@ at the appropriate environment variables.
 * tddium
 * jenkins
 * gocd
+* wercker
+* netlify
+* now
 * codeship (or any that set `CI_NAME` environment variable)
 * travis-ci
 * custom (anything else that sets `CI` environment variable)
