@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "tap": "^14.10.2"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
