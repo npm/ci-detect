@@ -9,6 +9,9 @@ module.exports = () =>
   : process.env.JENKINS_URL ? 'jenkins'
   : process.env['bamboo.buildKey'] ? 'bamboo'
   : process.env.GO_PIPELINE_NAME ? 'gocd'
+  : process.env.WERCKER ? 'wercker'
+  : process.env.NETLIFY ? 'netlify'
+  : process.env.NOW_GITHUB_ORG ? 'now'
   // codeship and a few others
   : process.env.CI_NAME ? process.env.CI_NAME
   // test travis last, since many of these mimic it
