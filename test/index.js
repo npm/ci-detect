@@ -20,7 +20,7 @@ const test = (key, val, expect) => {
   t.test(expect || 'false', t => {
     // many of them copy these, set for all of them except 'not in CI'
     // where we unset it so that our own tests don't fail in CI
-    if (key && key !== 'CI') {
+    if (key && key !== 'CI' && key !== 'BUILDER_OUTPUT' && key !== 'CODEBUILD_SRC_DIR') {
       env(t, 'CI', '1')
       env(t, 'TRAVIS', '1')
     } else {
@@ -48,3 +48,6 @@ test('TRAVIS', '1', 'travis-ci')
 test('CI', 'true', 'custom')
 test('CI', '1', 'custom')
 test('', '', false)
+test('APPVEYOR', '1', 'appveyor')
+test('CODEBUILD_SRC_DIR', '/some/path', 'aws-codebuild')
+test('BUILDER_OUTPUT', '/builder/output', 'builder')
