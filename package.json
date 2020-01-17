@@ -18,5 +18,9 @@
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm/ci-detect.git"
+  }
 }
