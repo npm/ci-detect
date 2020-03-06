@@ -15,6 +15,8 @@ module.exports = () =>
   : process.env.NOW_GITHUB_DEPLOYMENT ? 'now-github'
   : process.env.GITLAB_DEPLOYMENT ? 'now-gitlab'
   : process.env.BITBUCKET_DEPLOYMENT ? 'now-bitbucket'
+  // Bitbucket Pipelines
+  : process.env.BITBUCKET_BUILD_NUMBER ? 'bitbucket-pipelines'
   // codeship and a few others
   : process.env.CI_NAME ? process.env.CI_NAME
   // test travis after the others, since several CI systems mimic it
