@@ -34,6 +34,7 @@ at the appropriate environment variables.
 * `'now-github'` Zeit.co's Now for GitHub deployment service
 * `'now-bitbucket'` Zeit.co's Now for BitBucket deployment service
 * `'now-gitlab'` Zeit.co's Now for GitLab deployment service
+* `'bitbucket-pipelines'` Bitbucket Pipelines
 * `'codeship'` CodeShip
 * Anything that sets the `CI_NAME` environment variable will return the
   value as the result.  (This is how CodeShip is detected.)
