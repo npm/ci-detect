@@ -33,6 +33,8 @@ const test = (key, val, expect) => {
   })
 }
 
+// delete to verify that heroku test doesn't bork if node env missing
+delete process.env.NODE
 test('GERRIT_PROJECT', '1', 'gerrit')
 test('GITLAB_CI', '1', 'gitlab')
 test('CIRCLECI', '1', 'circle-ci')
@@ -56,3 +58,19 @@ test('', '', false)
 test('APPVEYOR', '1', 'appveyor')
 test('CODEBUILD_SRC_DIR', '/some/path', 'aws-codebuild')
 test('BUILDER_OUTPUT', '/builder/output', 'builder')
+test('SYSTEM_TEAMFOUNDATIONCOLLECTIONURI', '1', 'azure-pipelines')
+test('BITRISE_IO', '1', 'bitrise')
+test('BUDDY_WORKSPACE_ID', '1', 'buddy')
+test('BUILDKITE', '1', 'buildkite')
+test('CIRRUS_CI', '1', 'cirrus')
+test('DSARI', '1', 'dsari')
+test('STRIDER', '1', 'strider')
+test('TASKCLUSTER_ROOT_URL', '1', 'taskcluster')
+test('HUDSON_URL', '1', 'hudson')
+test('NOW_BUILDER', '1', 'now')
+test('MAGNUM', '1', 'magnum')
+test('NEVERCODE', '1', 'nevercode')
+test('RENDER', '1', 'render')
+test('SAIL_CI', '1', 'sail')
+test('SHIPPABLE', '1', 'shippable')
+test('NODE', '/usr/local/.heroku/node/bin/node', 'heroku')
