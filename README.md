@@ -51,6 +51,7 @@ at the appropriate environment variables.
 * `'shippable'` Shippable
 * `'heroku'` Heroku
 * `'codeship'` CodeShip
+* `'teamcity'` TeamCity
 * Anything that sets the `CI_NAME` environment variable will return the
   value as the result.  (This is how CodeShip is detected.)
 * `'travis-ci'` Travis-CI - A few other CI systems set `TRAVIS=1` in the
