@@ -24,6 +24,7 @@ module.exports = () =>
   : process.env.NOW_GITHUB_DEPLOYMENT ? 'now-github'
   : process.env.GITLAB_DEPLOYMENT ? 'now-gitlab'
   : process.env.BITBUCKET_DEPLOYMENT ? 'now-bitbucket'
+  : process.env.BITBUCKET_BUILD_NUMBER ? 'bitbucket-pipelines'
   : process.env.NOW_BUILDER ? 'now'
   : process.env.MAGNUM ? 'magnum'
   : process.env.NEVERCODE ? 'nevercode'

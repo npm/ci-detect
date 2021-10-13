@@ -36,6 +36,7 @@ at the appropriate environment variables.
 * `'now-gitlab'` Zeit.co's Now for GitLab deployment service
 * `'now'` Zeit.co's Now service, but not GitHub/BitBucket/GitLab
 * `'azure-pipelines'` Azure Pipelines
+* `'bitbucket-pipelines'` Bitbucket Pipelines
 * `'bitrise'` Bitrise
 * `'buddy'` Buddy
 * `'buildkite'` Buildkite
