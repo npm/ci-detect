@@ -53,6 +53,10 @@ at the appropriate environment variables.
 * `'heroku'` Heroku
 * `'codeship'` CodeShip
 * `'teamcity'` TeamCity
+* `'vercel'` Vercel
+* `'vercel-github'` Vercel GitHub
+* `'vercel-gitlab'` Vercel Gitlab
+* `'vercel-bitbucket'` Vercel Bitbucket
 * Anything that sets the `CI_NAME` environment variable will return the
   value as the result.  (This is how CodeShip is detected.)
 * `'travis-ci'` Travis-CI - A few other CI systems set `TRAVIS=1` in the
