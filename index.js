@@ -31,6 +31,7 @@ module.exports = () =>
   : process.env.RENDER ? 'render'
   : process.env.SAIL_CI ? 'sail'
   : process.env.SHIPPABLE ? 'shippable'
+  : process.env.TEAMCITY_VERSION ? 'teamcity'
   // codeship and a few others
   : process.env.CI_NAME ? process.env.CI_NAME
   // heroku doesn't set envs other than node in a heroku-specific location
