@@ -5,15 +5,17 @@ const detect = require('../')
 const env = (t, key, val) => {
   const orig = process.env[key]
   t.teardown(() => {
-    if (orig)
+    if (orig) {
       process.env[key] = orig
-    else
+    } else {
       delete process.env[key]
+    }
   })
-  if (val)
+  if (val) {
     process.env[key] = val
-  else
+  } else {
     delete process.env[key]
+  }
 }
 
 const test = (key, val, expect) => {
