@@ -18,25 +18,20 @@ const env = (t, key, val) => {
   }
 }
 
+// our own CI runs in github actions so start with turning these off
+env(t, 'GITHUB_ACTION', '')
+env(t, 'CI', '')
+// delete to verify that heroku test doesn't bork if node env missing
+env(t, 'NODE', '')
+
 const test = (key, val, expect) => {
   t.test(expect || 'false', t => {
-    // many of them copy these, set for all of them except 'not in CI'
-    // where we unset it so that our own tests don't fail in CI
-    if (key && key !== 'CI' && key !== 'BUILDER_OUTPUT' && key !== 'CODEBUILD_SRC_DIR') {
-      env(t, 'CI', '1')
-      env(t, 'TRAVIS', '1')
-    } else {
-      env(t, 'CI', '')
-      env(t, 'TRAVIS', '')
-    }
     env(t, key, val)
     t.equal(detect(), expect)
     t.end()
   })
 }
 
-// delete to verify that heroku test doesn't bork if node env missing
-delete process.env.NODE
 test('GERRIT_PROJECT', '1', 'gerrit')
 test('GITLAB_CI', '1', 'gitlab')
 test('CIRCLECI', '1', 'circle-ci')
