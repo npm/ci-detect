@@ -42,6 +42,7 @@ at the appropriate environment variables.
 * `'buildkite'` Buildkite
 * `'cirrus'` Cirrus CI
 * `'dsari'` dsari CI
+* `'screwdriver'` Screwdriver CI
 * `'strider'` Strider CI
 * `'taskcluster'` Mozilla Taskcluster
 * `'hudson'` Hudson CI
