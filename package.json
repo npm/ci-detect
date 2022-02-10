@@ -4,6 +4,7 @@
   "description": "Detect what kind of CI environment the program is in",
   "author": "Isaac Z. Schlueter <i@izs.me> (https://izs.me)",
   "license": "ISC",
+  "main": "./lib",
   "scripts": {
     "test": "tap",
     "preversion": "npm test",
