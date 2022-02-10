@@ -1,6 +1,6 @@
 {
   "name": "@npmcli/ci-detect",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Detect what kind of CI environment the program is in",
   "author": "GitHub Inc.",
   "license": "ISC",
