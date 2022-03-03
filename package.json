@@ -21,7 +21,7 @@
     "check-coverage": true
   },
   "devDependencies": {
-    "@npmcli/template-oss": "^2.8.1",
+    "@npmcli/template-oss": "^2.9.2",
     "tap": "^15.1.6"
   },
   "files": [
