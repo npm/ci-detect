@@ -5,6 +5,7 @@
   "author": "GitHub Inc.",
   "license": "ISC",
   "main": "./lib",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "tap",
     "preversion": "npm test",
