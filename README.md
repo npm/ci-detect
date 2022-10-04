@@ -30,6 +30,7 @@ at the appropriate environment variables.
 * `'bamboo'` Bamboo
 * `'gocd'` GoCD
 * `'wercker'` Oracle Wercker
+* `'woodpecker'` Woodpecker CI
 * `'netlify'` Netlify
 * `'now-github'` Zeit.co's Now for GitHub deployment service
 * `'now-bitbucket'` Zeit.co's Now for BitBucket deployment service
