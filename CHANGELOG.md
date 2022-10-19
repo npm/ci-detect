@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.1](https://github.com/npm/ci-detect/compare/v3.0.0...v3.0.1) (2022-10-19)
+
+### Documentation
+
+* [`9bbffee`](https://github.com/npm/ci-detect/commit/9bbffeea22c57bfb8e71b71b1c2e5589d80d42ff) [#41](https://github.com/npm/ci-detect/pull/41) Sorted the list of CI provider names (#41) (@kommendorkapten)
+
 ## [3.0.0](https://github.com/npm/ci-detect/compare/v2.0.0...v3.0.0) (2022-10-04)
 
 ### ⚠️ BREAKING CHANGES
