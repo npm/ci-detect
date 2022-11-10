@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.0.2](https://github.com/npm/ci-detect/compare/v3.0.1...v3.0.2) (2022-11-10)
+
+### Bug Fixes
+
+* [`9253962`](https://github.com/npm/ci-detect/commit/92539624aaedb3d2a87e66e00c0f228eb84df709) github actions (@wraithgar)
+
+### Documentation
+
+* [`6e943de`](https://github.com/npm/ci-detect/commit/6e943de75f43fac7bf2dd84680f467c3ea3f0270) [#49](https://github.com/npm/ci-detect/pull/49) clean up readme (@wraithgar)
+
 ## [3.0.1](https://github.com/npm/ci-detect/compare/v3.0.0...v3.0.1) (2022-10-19)
 
 ### Documentation
