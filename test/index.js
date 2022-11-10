@@ -19,7 +19,7 @@ const env = (t, key, val) => {
 }
 
 // our own CI runs in github actions so start with turning these off
-env(t, 'GITHUB_ACTION', '')
+env(t, 'GITHUB_ACTIONS', '')
 env(t, 'CI', '')
 // delete to verify that heroku test doesn't bork if node env missing
 env(t, 'NODE', '')
@@ -37,7 +37,7 @@ test('GITLAB_CI', '1', 'gitlab')
 test('CIRCLECI', '1', 'circle-ci')
 test('SEMAPHORE', '1', 'semaphore')
 test('DRONE', '1', 'drone')
-test('GITHUB_ACTION', '1', 'github-actions')
+test('GITHUB_ACTIONS', 'true', 'github-actions')
 test('TDDIUM', '1', 'tddium')
 test('JENKINS_URL', '1', 'jenkins')
 test('WERCKER', '1', 'wercker')
