@@ -1,5 +1,7 @@
 # @npmcli/ci-detect
 
+**THIS PACKAGE HAS BEEN DEPRECATED, USE `ci-info` INSTEAD**
+
 Detect what kind of CI environment the program is in
 
 ## USAGE
